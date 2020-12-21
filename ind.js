@@ -56,3 +56,14 @@ for(let i = 0; i < mas.length; i++) {
 console.log('Конечный вид:' + ' ' + array);
 
 // Задание 5
+
+console.log('Задание №5')
+const mas5 = [3, 10, 2, 80, 1]
+let max = mas5[0]
+
+for (i = 0; i <= 5; ++i) {
+    if (mas5[i] > max) {
+        max = mas5[i]
+    }
+}
+console.log ('Максимум:' + ' ' + max)
