@@ -22,6 +22,11 @@ for (let i = 0; i <= 15; ++i) {
 
 // Задание 3
 
+console.log('Задание №3')
+for (let i = 0; i <= 3; ++i) {
+    console.log('|# # # # |')
+    console.log('| # # # #|')
+}
 
 // Задание 4
 
