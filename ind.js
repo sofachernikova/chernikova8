@@ -30,5 +30,29 @@ for (let i = 0; i <= 3; ++i) {
 
 // Задание 4
 
+console.log('Задание №4')
+let c = Number(prompt(`Первое число`));
+let d = Number(prompt(`Второе число`));
+let f = Number(prompt(`Третье число`));
+const mas = [c, d, f]
+let array = '';
+for(let i = 0; i < mas.length; i++) {
+    array += mas[i] + ' ';
+}
+console.log('Начальный вид:' + ' ' + array);
+for(let i = 0; i < mas.length; i++) {
+    for(let j = mas.length; j >= i + 1; j--) {
+       if(mas[j - 1] > mas[j]) {
+           let a = mas[j];
+           mas[j] = mas[j - 1];
+           mas[j - 1] = a;
+       } 
+    }
+}
+array = '';
+for(let i = 0; i < mas.length; i++) {
+    array += mas[i] + ' ';
+}
+console.log('Конечный вид:' + ' ' + array);
 
 // Задание 5
